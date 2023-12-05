@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instant Typewriter</title>
+  <meta name="author" content="Camila Uribe" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1> Instant TypeWriter</h1>
+    <nav class="container-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Product</a>
+      <a href="#">Contact</a>
+      <a href="#" class="shopping-car"><img src="./images/shopping-cart_icon.png" alt="Shopping Car Icon" width="30"
+          height="30" /></a>
+    </nav>
+  </header>
+  <!--
+  <section class="contact_us_section">
+    <h2>CONTACT US</h2>
+    <p>Email: typewriter.info@gmail.com</p>
+    <p>Phone: +1 845 346 2345</p>
+    <p>Or you can contact us using the form below.</p>
+  </section>
+
+  <section class="contact_form">
+    <div>
+      <h3>Leave us your contact info and we will be happy to help you!</h3>
+      <div class="form_div">
+        <form action="mailto:" method="post" enctype="text/plain">
+          <div class="input_form_div">
+            <label id="name" for="name">Name: </label>
+            <input id="name" type="text" required />
+          </div>
+          <div class="input_form_div">
+            <label id="email" for="email">Email: </label>
+            <input type="email" id="email" name="email" required placeholder="abc@gmail.com" />
+          </div>
+          <div class="input_form_div">
+            <label id="tel" for="tel">Phone: </label>
+            <input id="tel" name="tel" type="tel" required />
+          </div>
+          <div class="input_form_div">
+            <label id="message" for="message" class="textarea_input">Message: </label>
+            <textarea id="message" rows="4" cols="30"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+-->
+  <section id="contact">
+
+    <h2 class="section-header">CONTACT US</h2>
+
+    <div class="contact-wrapper">
+
+      <!-- Left contact page -->
+
+      <form id="contact-form" class="form-horizontal" role="form">
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+        <button class="send-button" id="submit" type="submit" value="SEND">SEND</button>
+
+      </form>
+
+      <!-- Left contact page -->
+
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"> <img src="./images/location_icon.png" alt="Location Icon" width="35" height="35"/>Toronto, ON</li>
+
+          <li class="list-item"><a href="tel:1-845-346-2345"> <img src="" />(845)346-2345</a></li>
+
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#"
+                  title="Send me an email">typewriter.info@gmail.com</a></span></i></li>
+
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2023 The Typewriter History</p>
+  </footer>
+</body>
+
+</html>
