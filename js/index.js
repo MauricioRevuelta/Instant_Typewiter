@@ -36,27 +36,3 @@ document.addEventListener('DOMContentLoaded', function () {
     backSpeed: 80,
   });
   
-  AOS.init(),
-    scrollButton &&
-      (window.addEventListener('scroll', () => {
-        pageYOffset > 1.2 * window.innerHeight
-          ? (scrollButton.style.display = 'flex')
-          : (scrollButton.style.display = 'none');
-      }),
-      scrollButton.addEventListener('click', () => {
-        window.scrollTo(0, 0);
-      })),
-    hamburgerMenu.addEventListener('click', () => {
-      navContent.classList.add('show'), (document.body.style.overflow = 'hidden');
-    }),
-    closeNavButton.addEventListener('click', () => {
-      navContent.classList.remove('show'),
-        (document.body.style.overflow = 'initial');
-    }),
-    navLinks.forEach((e) => {
-      e.addEventListener('click', () => {
-        navContent.classList.remove('show'),
-          (document.body.style.overflow = 'initial');
-      });
-    });
-  
