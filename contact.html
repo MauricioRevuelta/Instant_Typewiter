@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Instant Typewriter</title>
   <meta name="author" content="Camila Uribe" />
+  <meta name="description" content="Contact Instant TypeWriter">
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -16,8 +18,8 @@
         <span class="typing typed"></span>
     </section>
     <nav class="container-nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
       <a href="./product.html">Product</a>
       <a href="./contact.html">Contact</a>
       <a href="#" class="shopping-car"><img src="./images/shopping-cart_icon.png" alt="Shopping Car Icon" width="30"
@@ -45,7 +47,7 @@
 
           <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
 
-          <button class="send-button" id="submit" type="submit" value="SEND">SEND</button>
+          <button class="send-button" id="submit" type="button" value="SEND">SEND</button>
 
         </form>
 
@@ -57,35 +59,39 @@
             <li class="list-item"> <img src="./images/location_icon.png" alt="Location Icon" width="35"
                 height="35" />Toronto, ON</li>
 
-            <li class="list-item"><a href="tel:1-845-346-2345"> <img src="./images/phone-icon.png" alt="Phone Icon"
+            <li class="list-item"><a href="tel:1-845-346-2345" title="Give us a call"> <img src="./images/phone-icon.png" alt="Phone Icon"
                   width="35" height="35" />(845)346-2345</a></li>
 
-            <li class="list-item"><a href="mailto:#" title="Send me an email"> <img src="./images/email-icon.png"
+            <li class="list-item"><a href="mailto:#" title="Send us an email"> <img src="./images/email-icon.png"
                   alt="Email Icon" width="35" height="35" /> typewriter.info@gmail.com</a></li>
 
           </ul>
 
           <hr>
           <ul class="social-media-list">
-            <li><a href="#" target="_blank"> <img src="./images/twitter-logo.png" alt="Twitter Icon" width="30"
+            <li><a href="#" target="_blank" title="Tweet with us"> <img src="./images/twitter-logo.png" alt="Twitter Icon" width="30"
                   height="30" /></a>
             </li>
-            <li><a href="#" target="_blank"><img src="./images/instagram-logo.png" alt="Instagram Icon" width="35"
+            <li><a href="#" target="_blank" title="Visit us on Instagram"><img src="./images/instagram-logo.png" alt="Instagram Icon" width="35"
                   height="35" /></a>
             </li>
           </ul>
           <hr>
-          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+          <div class="copyright">&copy; ALL RIGHTS RESERVED</div>
         </div>
 
       </div>
 
     </section>
   </main>
-  
+
   <footer>
     <p>&copy; 2023 The Typewriter History</p>
   </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

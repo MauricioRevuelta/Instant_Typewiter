@@ -1,5 +1,5 @@
 html {
-  background: rgb(184, 180, 180);
+  background: white;
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -8,10 +8,33 @@ html {
 
 header,
 footer {
-  background-color: white;
+  background: #3e3766;
+  background-image: -webkit-radial-gradient(
+    top,
+    circle cover,
+    #403e61 0%,
+    #312c47 80%
+  );
+  background-image: -moz-radial-gradient(
+    top,
+    circle cover,
+    #3f3e60 0%,
+    #332d4d 80%
+  );
+  background-image: -o-radial-gradient(
+    top,
+    circle cover,
+    #444366 0%,
+    #322d49 80%
+  );
+  background-image: radial-gradient(top, circle cover, #454464 0%, #2f2a45 80%);
   text-align: center;
-  color: black;
+  color: white;
   width: 100%;
+}
+
+footer {
+  margin-top: 47px;
 }
 
 body {
@@ -32,12 +55,6 @@ body {
   src: url('../font/JMH\ Typewriter.otf') format('opentype');
 }
 
-@font-face {
-  font-family: Moderntypewriter;
-  src: url('../font/MODERN\ TYPEWRITER.ttf') format('opentype');
-}
-
-
 h1 {
   font-size: 50px;
 }
@@ -47,15 +64,25 @@ h1 {
 }
 
 .typed {
-  color: rgb(30, 28, 28);
+  color: white;
   font-size: 50px;
   position: relative;
   bottom: 0;
   animation: reveal 1s ease-in-out forwards;
 }
 
-.container-nav {
+main {
+  margin: 0 50px 0 20px;
+  line-height: 2;
   color: black;
+  text-align: left;
+}
+
+.main-about {
+  margin: 0 25px 25px 40px;
+}
+
+.container-nav {
   font-size: 20px;
   width: 100%;
   word-spacing: 20px;
@@ -72,32 +99,87 @@ nav a {
   border-radius: 15%;
   padding: 5px;
   background-color: white;
-} 
+}
 
 .project,
 .time {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.aboutPage {
-  font-family: Moderntypewriter, 'Courier News', Courier, monospace, sans-serif;;
+.time1,
+.project1 {
+  display: inline-block;
 }
 
-a {
+nav a {
   outline-color: transparent;
-  color: black;
-  text-shadow: .5px .5px black;
+  color: white;
+  text-shadow: 0.5px 0.5px black;
 }
 
-a:link {
+nav a:link {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+ul a {
   text-decoration: none;
   color: black;
 }
 
 a:hover {
-  text-shadow: 1px 0 10px rgba(154, 148, 148, 0.8);
-  text-decoration: underline;
-  transition:  0.5s ease;
+  background: rgb(234, 241, 240);
+  border-radius: 10px;
+  transition: 0.7s, ease, 0.7s;
+  text-shadow: 1px 0 10px white;
+  color: black;
+  transition: 0.5s ease;
+  padding: 10px;
+}
+
+.container-page-title {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.img-typewriter {
+  margin: 5rem;
+  max-width: 40%;
+  /* Ensure the image doesn't exceed its container */
+  height: auto;
+}
+
+.text-index {
+  font-family: JMHtypewriter, 'Courier News', Courier, monospace, sans-serif;
+  color: #000;
+  margin: 25px;
+}
+
+.index-title {
+  font-family: JMHtypewriter, 'Courier News', Courier, monospace, sans-serif;
+  font-size: 40px;
+  color: #000;
+  text-align: left;
+}
+
+.old-typewriter-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.qwerty {
+  display: flex;
+}
+
+.qwerty1 {
+  display: inline-block;
 }
 
 .tw-california {
@@ -105,7 +187,6 @@ a:hover {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 .slides {
@@ -126,30 +207,30 @@ a:hover {
 }
 
 .manual-btn {
-  border: 2px solid #DDF9F1;
+  border: 2px solid #ddf9f1;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
 .manual-btn:hover {
-  background: #DDF9F1;
+  background: #ddf9f1;
 }
 
 #radio1:checked ~ .slide-first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .slide-first  {
+#radio2:checked ~ .slide-first {
   margin-left: -10%;
 }
 
-#radio3:checked ~ .slide-first  {
+#radio3:checked ~ .slide-first {
   margin-left: -20%;
 }
 
@@ -168,18 +249,17 @@ legend {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 #radio4:checked ~ .slide-second {
   margin-left: 0;
 }
 
-#radio5:checked ~ .slide-second  {
+#radio5:checked ~ .slide-second {
   margin-left: -10%;
 }
 
-#radio6:checked ~ .slide-second  {
+#radio6:checked ~ .slide-second {
   margin-left: -20%;
 }
 
@@ -201,18 +281,17 @@ fieldset {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 #radio7:checked ~ .slide-third {
   margin-left: 0;
 }
 
-#radio8:checked ~ .slide-third  {
+#radio8:checked ~ .slide-third {
   margin-left: -10%;
 }
 
-#radio9:checked ~ .slide-third  {
+#radio9:checked ~ .slide-third {
   margin-left: -20%;
 }
 
@@ -221,18 +300,17 @@ fieldset {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 
 #radio10:checked ~ .slide-fourth {
   margin-left: 0;
 }
 
-#radio11:checked ~ .slide-fourth  {
+#radio11:checked ~ .slide-fourth {
   margin-left: -10%;
 }
 
-#radio12:checked ~ .slide-fourth  {
+#radio12:checked ~ .slide-fourth {
   margin-left: -20%;
 }
 
@@ -241,7 +319,10 @@ fieldset {
   margin-right: 50px;
 }
 
-.wrapper, .wrapper2, .wrapper3, .wrapper4 {
+.wrapper,
+.wrapper2,
+.wrapper3,
+.wrapper4 {
   margin-top: 10px;
   margin-left: 220px;
   height: 30px;
@@ -252,7 +333,8 @@ fieldset {
   justify-content: space-between;
   font-weight: bold;
   border-radius: 5px;
-  font-size: 70%;
+  font-size: 80%;
+  color: white;
 }
 
 .wrapper span {
@@ -262,8 +344,8 @@ fieldset {
 }
 
 .wrapper span.number {
-  border-right: 2px solid rgba(255,255,255,0.8);
-  border-left: 2px solid rgba(255,255,255,0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
   margin-right: 5px;
 }
 
@@ -274,8 +356,8 @@ fieldset {
 }
 
 .wrapper2 span.number2 {
-  border-right: 2px solid rgba(255,255,255,0.8);
-  border-left: 2px solid rgba(255,255,255,0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
   margin-right: 5px;
 }
 
@@ -286,8 +368,8 @@ fieldset {
 }
 
 .wrapper3 span.number3 {
-  border-right: 2px solid rgba(255,255,255,0.8);
-  border-left: 2px solid rgba(255,255,255,0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
   margin-right: 5px;
 }
 
@@ -298,8 +380,8 @@ fieldset {
 }
 
 .wrapper4 span.number4 {
-  border-right: 2px solid rgba(255,255,255,0.8);
-  border-left: 2px solid rgba(255,255,255,0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
   margin-right: 5px;
 }
 
@@ -309,10 +391,10 @@ fieldset {
   cursor: pointer;
   background: black;
   color: whitesmoke;
-  font-size: 60%;
+  font-size: 70%;
   border-radius: 5px;
   padding: 5px;
-  text-shadow: .5px .5px white;
+  text-shadow: 0.5px 0.5px white;
 }
 
 #contact {
@@ -325,9 +407,8 @@ fieldset {
   margin: 0 auto;
   padding: 40px 0;
   font-family: JMHtypewriter, 'Courier News', Courier, monospace, sans-serif;
-  color: #fff;
-  letter-spacing: 6px;
-  text-shadow: -1px 1px 1px black;
+  color: black;
+  letter-spacing: 4px;
 }
 
 .contact-wrapper {
@@ -346,14 +427,13 @@ fieldset {
   max-width: 450px;
   font-weight: 400;
   line-height: 3;
-  
 }
 
-.form-control, 
+.form-control,
 textarea {
   min-width: 390px;
   min-height: 1.5rem;
-  background-color:white;
+  background-color: white;
   color: gray;
   letter-spacing: 1px;
   border-radius: 5px;
@@ -387,12 +467,10 @@ textarea {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
-  
 }
 
 .list-item {
   line-height: 4;
-  color: black;
 }
 
 .contact-text {
@@ -411,7 +489,6 @@ textarea {
   text-decoration: none;
 }
 
-
 /* Social Media Icons */
 .social-media-list {
   position: relative;
@@ -423,7 +500,7 @@ textarea {
 }
 
 .social-media-list li {
-  position: relative; 
+  position: relative;
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -431,13 +508,13 @@ textarea {
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
-  background-color: #008B8B;
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
+  background-color: #008b8b;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .social-media-list li:hover {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .copyright {
@@ -451,4 +528,3 @@ hr {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
-
