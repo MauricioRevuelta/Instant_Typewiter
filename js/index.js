@@ -56,4 +56,3 @@ function showMessage() {
   });
 }
 
-document.getElementById('submit').addEventListener('click', showMessage);

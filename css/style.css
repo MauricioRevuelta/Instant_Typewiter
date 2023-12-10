@@ -9,33 +9,15 @@ html {
 header,
 footer {
   background: #3e3766;
-  background-image: -webkit-radial-gradient(
-    top,
-    circle cover,
-    #403e61 0%,
-    #312c47 80%
-  );
-  background-image: -moz-radial-gradient(
-    top,
-    circle cover,
-    #3f3e60 0%,
-    #332d4d 80%
-  );
-  background-image: -o-radial-gradient(
-    top,
-    circle cover,
-    #444366 0%,
-    #322d49 80%
-  );
+  background-image: -webkit-radial-gradient(top, circle cover, #403e61 0%, #312c47 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3f3e60 0%, #332d4d 80%);
+  background-image: -o-radial-gradient(top, circle cover, #444366 0%, #322d49 80%);
   background-image: radial-gradient(top, circle cover, #454464 0%, #2f2a45 80%);
   text-align: center;
   color: white;
   width: 100%;
 }
 
-footer {
-  margin-top: 47px;
-}
 
 body {
   display: flex;
@@ -117,6 +99,12 @@ nav a {
   outline-color: transparent;
   color: white;
   text-shadow: 0.5px 0.5px black;
+}
+
+nav a {
+  outline-color: transparent;
+  color: white;
+  text-shadow: .5px .5px black;
 }
 
 nav a:link {
@@ -222,15 +210,19 @@ a:hover {
   background: #ddf9f1;
 }
 
-#radio1:checked ~ .slide-first {
+#radio1:checked~.slide-first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .slide-first {
+#radio1:checked~.slide-first {
+  margin-left: 0;
+}
+
+#radio2:checked~.slide-first {
   margin-left: -10%;
 }
 
-#radio3:checked ~ .slide-first {
+#radio3:checked~.slide-first {
   margin-left: -20%;
 }
 
@@ -251,15 +243,19 @@ legend {
   overflow: hidden;
 }
 
-#radio4:checked ~ .slide-second {
+#radio4:checked~.slide-second {
   margin-left: 0;
 }
 
-#radio5:checked ~ .slide-second {
+#radio4:checked~.slide-second {
+  margin-left: 0;
+}
+
+#radio5:checked~.slide-second {
   margin-left: -10%;
 }
 
-#radio6:checked ~ .slide-second {
+#radio6:checked~.slide-second {
   margin-left: -20%;
 }
 
@@ -283,15 +279,19 @@ fieldset {
   overflow: hidden;
 }
 
-#radio7:checked ~ .slide-third {
+#radio7:checked~.slide-third {
   margin-left: 0;
 }
 
-#radio8:checked ~ .slide-third {
+#radio7:checked~.slide-third {
+  margin-left: 0;
+}
+
+#radio8:checked~.slide-third {
   margin-left: -10%;
 }
 
-#radio9:checked ~ .slide-third {
+#radio9:checked~.slide-third {
   margin-left: -20%;
 }
 
@@ -302,15 +302,19 @@ fieldset {
   overflow: hidden;
 }
 
-#radio10:checked ~ .slide-fourth {
+#radio10:checked~.slide-fourth {
   margin-left: 0;
 }
 
-#radio11:checked ~ .slide-fourth {
+#radio10:checked~.slide-fourth {
+  margin-left: 0;
+}
+
+#radio11:checked~.slide-fourth {
   margin-left: -10%;
 }
 
-#radio12:checked ~ .slide-fourth {
+#radio12:checked~.slide-fourth {
   margin-left: -20%;
 }
 
@@ -508,9 +512,9 @@ textarea {
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
-  background-color: #008b8b;
+  background-color: #008B8B;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {
@@ -524,7 +528,4 @@ textarea {
   text-align: center;
 }
 
-hr {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
+
