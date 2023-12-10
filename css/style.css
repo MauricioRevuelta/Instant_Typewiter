@@ -6,6 +6,7 @@ html {
   margin-right: 0;
 }
 
+/* Header and footer style */
 header,
 footer {
   background: #3e3766;
@@ -19,9 +20,10 @@ footer {
 }
 
 footer {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
+/* body styling */
 body {
   display: flex;
   flex-direction: column;
@@ -35,6 +37,7 @@ body {
   box-sizing: border-box;
 }
 
+/* font added to the page*/
 @font-face {
   font-family: JMHtypewriter;
   src: url('../font/JMH\ Typewriter.otf') format('opentype');
@@ -48,6 +51,7 @@ h1 {
   margin-top: 20px;
 }
 
+/* Title styling */
 .typed {
   color: white;
   font-size: 50px;
@@ -514,9 +518,4 @@ textarea {
   color: black;
   letter-spacing: 1px;
   text-align: center;
-}
-
-hr {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }

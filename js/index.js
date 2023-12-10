@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
+  // function for the quantity of typewriter that will be order
     function initializeCounter(plusSelector, minusSelector, numberSelector) {
       const plus = document.querySelector(plusSelector);
       const minus = document.querySelector(minusSelector);
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeCounter('.plus4', '.minus4', '.number4');
   });
   
+  // Animation for the website title
   let typing = new Typed('.typing', {
     strings: ['Instant Typewriter'],
     loop: !0,
