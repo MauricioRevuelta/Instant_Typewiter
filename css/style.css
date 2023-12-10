@@ -18,9 +18,6 @@ footer {
   width: 100%;
 }
 
-footer {
-  margin-top: 5px;
-}
 
 body {
   display: flex;
@@ -101,6 +98,12 @@ nav a {
 nav a {
   outline-color: transparent;
   color: white;
+  text-shadow: 0.5px 0.5px black;
+}
+
+nav a {
+  outline-color: transparent;
+  color: white;
   text-shadow: .5px .5px black;
 }
 
@@ -118,7 +121,7 @@ ul a {
 a:hover {
   background: rgb(234, 241, 240);
   border-radius: 10px;
-  transition: .7s, ease, .7s;
+  transition: 0.7s, ease, 0.7s;
   text-shadow: 1px 0 10px white;
   color: black;
   transition: 0.5s ease;
@@ -172,7 +175,6 @@ a:hover {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 .slides {
@@ -193,7 +195,7 @@ a:hover {
 }
 
 .manual-btn {
-  border: 2px solid #DDF9F1;
+  border: 2px solid #ddf9f1;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -205,7 +207,11 @@ a:hover {
 }
 
 .manual-btn:hover {
-  background: #DDF9F1;
+  background: #ddf9f1;
+}
+
+#radio1:checked~.slide-first {
+  margin-left: 0;
 }
 
 #radio1:checked~.slide-first {
@@ -235,7 +241,10 @@ legend {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+}
 
+#radio4:checked~.slide-second {
+  margin-left: 0;
 }
 
 #radio4:checked~.slide-second {
@@ -268,7 +277,10 @@ fieldset {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+}
 
+#radio7:checked~.slide-third {
+  margin-left: 0;
 }
 
 #radio7:checked~.slide-third {
@@ -288,7 +300,10 @@ fieldset {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+}
 
+#radio10:checked~.slide-fourth {
+  margin-left: 0;
 }
 
 #radio10:checked~.slide-fourth {
@@ -383,7 +398,7 @@ fieldset {
   font-size: 70%;
   border-radius: 5px;
   padding: 5px;
-  text-shadow: .5px .5px white;
+  text-shadow: 0.5px 0.5px white;
 }
 
 #contact {
@@ -416,7 +431,6 @@ fieldset {
   max-width: 450px;
   font-weight: 400;
   line-height: 3;
-
 }
 
 .form-control,
@@ -457,7 +471,6 @@ textarea {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
-
 }
 
 .list-item {
@@ -479,7 +492,6 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
-
 
 /* Social Media Icons */
 .social-media-list {
@@ -516,7 +528,4 @@ textarea {
   text-align: center;
 }
 
-hr {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
+
